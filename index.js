@@ -1,6 +1,7 @@
 // transpile:main
 
-import {default as sample} from './lib/sample';
 
-export {sample};
+import authorize from './lib/authorize';
+
+export default authorize;
 

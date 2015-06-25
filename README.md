@@ -1,16 +1,3 @@
-authorize-ios
-===================
 
-Work in progress, stay tuned!
-
-## Watch
-
-```
-npm run watch
-```
-
-## Test
-
-```
-npm test
-```
+# authorize-ios
+A little utility that pre-authorizes Instruments to run UIAutomation scripts against iOS devices
