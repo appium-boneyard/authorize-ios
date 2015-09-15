@@ -19,7 +19,6 @@ describe('Authorize test', () =>{
   beforeEach(() => {
     sandbox = sinon.sandbox.create();
     mocks[SANDBOX] = sandbox;
-    console.log('sandbox' +sandbox);
     for (let [key, value] of _.pairs(libs)) {
       mocks[key] = sandbox.mock(value);
     }
