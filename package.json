@@ -23,11 +23,12 @@
     "lib": "lib"
   },
   "dependencies": {
-    "appium-logger": "^1.0.0",
-    "appium-xcode": "^2.0.5",
-    "babel-runtime": "=5.5.5",
-    "gulp-mocha": "^1.0.0",
-    "lodash": "^1.0.0",
+    "appium-logger": "^2.0.0",
+    "appium-support": "^2.0.0",
+    "appium-xcode": "^3.0.0",
+    "babel-runtime": "=5.8.24",
+    "gulp-mocha": "^2.1.0",
+    "lodash": "^3.10.0",
     "source-map-support": "^0.3.1",
     "teen_process": "^1.0.0"
   },
@@ -42,7 +43,6 @@
     "chai-as-promised": "^5.1.0",
     "gulp": "^3.8.11",
     "sinon": "^1.0.0",
-    "mochawait": "^2.0.0",
     "yargs": "^3.10.0"
   }
 }
