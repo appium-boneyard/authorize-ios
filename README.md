@@ -8,7 +8,7 @@ A little utility that pre-authorizes Instruments to run UIAutomation scripts aga
 
 ##Installation##
 
-(if you're using appium, check the appium readme for how to call this function. This readme is for developers who are using this npm package, not appium users)
+(if you're using appium, check the [appium docs](https://github.com/appium/appium/blob/master/docs/en/appium-setup/running-on-osx.md) for how to call this function. The document you are reading is for developers who are using this npm package, not appium users)
 
 `npm install authorize-ios`
 
