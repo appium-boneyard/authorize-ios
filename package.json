@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "appium-logger": "^2.0.0",
+    "appium-support": "^2.0.0",
     "appium-xcode": "^3.0.0",
     "babel-runtime": "=5.8.24",
     "gulp-mocha": "^2.1.0",
