@@ -7,6 +7,7 @@ import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import _ from 'lodash';
 
+
 chai.should();
 chai.use(chaiAsPromised);
 
@@ -28,7 +29,7 @@ describe('Authorize test', () =>{
     sandbox.restore();
   });
 
-  it('should throw and error', async () => {
+  it('should throw an error', async () => {
     mocks.teen_process.expects('exec').once().withExactArgs('DevToolsSecurity', ['--enable']).throws('Error');
     await authorize().should.eventually.be.rejectedWith('Error');
     mocks[SANDBOX].verify();
