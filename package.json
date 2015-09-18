@@ -18,7 +18,9 @@
     "node"
   ],
   "main": "./build/index.js",
-  "bin": {},
+  "bin": {
+    "authorize-ios": "./authorize-ios.js"
+  },
   "directories": {
     "lib": "lib"
   },
@@ -40,7 +42,7 @@
     "watch": "./node_modules/.bin/gulp"
   },
   "devDependencies": {
-    "appium-gulp-plugins": "^1.2.12",
+    "appium-gulp-plugins": "^1.3.11",
     "chai": "^3.0.0",
     "chai-as-promised": "^5.1.0",
     "gulp": "^3.8.11",
