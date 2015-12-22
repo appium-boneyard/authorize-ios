@@ -31,7 +31,6 @@
     "babel-runtime": "=5.8.24",
     "bluebird": "^2.10.0",
     "glob": "^5.0.14",
-    "gulp-mocha": "^2.1.0",
     "lodash": "^3.10.0",
     "source-map-support": "^0.3.1",
     "teen_process": "^1.0.0"
@@ -46,7 +45,6 @@
     "chai": "^3.0.0",
     "chai-as-promised": "^5.1.0",
     "gulp": "^3.8.11",
-    "sinon": "^1.0.0",
-    "yargs": "^3.10.0"
+    "sinon": "^1.0.0"
   }
 }
