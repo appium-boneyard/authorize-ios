@@ -16,11 +16,11 @@ let SANDBOX = Symbol();
 let mocks = {};
 let libs = {teen_process, xcode, path};
 
-describe('Authorize test', function (){
+describe('Authorize test', function () {
   beforeEach(function () {
-    sandbox = sinon.sandbox.create();
+    sandbox = sinon.createSandbox();
     mocks[SANDBOX] = sandbox;
-    for (let [key, value] of _.pairs(libs)) {
+    for (let [key, value] of _.toPairs(libs)) {
       mocks[key] = sandbox.mock(value);
     }
   });
@@ -30,7 +30,8 @@ describe('Authorize test', function (){
   });
 
   it('should throw an error', async function () {
-    mocks.teen_process.expects('exec').once().withExactArgs('DevToolsSecurity', ['--enable']).throws('Error');
+    // mocks.teen_process.expects('exec').once().withExactArgs('DevToolsSecurity', ['--enable']).throws('Error');
+    mocks.teen_process.expects('exec').once().withExactArgs('DevToolsSecurity', ['--enable']).throws(new Error('Error'));
     await authorize().should.eventually.be.rejectedWith('Error');
     mocks[SANDBOX].verify();
   });
