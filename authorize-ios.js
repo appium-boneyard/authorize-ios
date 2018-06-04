@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
 
-var authorize = require('./build/index.js');
+const authorize = require('./build/index.js');
 
 authorize();

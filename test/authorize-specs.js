@@ -16,7 +16,7 @@ let SANDBOX = Symbol();
 let mocks = {};
 let libs = {teen_process, xcode, path};
 
-describe('Authorize test', function (){
+describe('Authorize test', function () {
   beforeEach(function () {
     sandbox = sinon.sandbox.create();
     mocks[SANDBOX] = sandbox;
