@@ -60,7 +60,7 @@
     "gulp": "^3.8.11",
     "mocha": "^5.1.1",
     "pre-commit": "^1.2.2",
-    "sinon": "^5.0.10"
+    "sinon": "^6.0.0"
   },
   "greenkeeper": {
     "ignore": [
