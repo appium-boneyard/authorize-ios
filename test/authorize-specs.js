@@ -30,7 +30,6 @@ describe('Authorize test', function () {
   });
 
   it('should throw an error', async function () {
-    // mocks.teen_process.expects('exec').once().withExactArgs('DevToolsSecurity', ['--enable']).throws('Error');
     mocks.teen_process.expects('exec').once().withExactArgs('DevToolsSecurity', ['--enable']).throws(new Error('Error'));
     await authorize().should.eventually.be.rejectedWith('Error');
     mocks[SANDBOX].verify();
