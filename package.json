@@ -48,6 +48,7 @@
     "test": "gulp once",
     "watch": "gulp watch",
     "lint": "gulp lint",
+    "lint:fix": "gulp lint --fix",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "precommit-test": "REPORTER=dot gulp once"
   },
